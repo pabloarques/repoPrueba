@@ -3,11 +3,13 @@ public class Cliente {
 	private String dni;
 	private String nombre;
 	private String especialidad;
+	private String nacionalidad;
 
-	public Cliente(String dni, String nombre, String especialidad) {
+	public Cliente(String dni, String nombre, String especialidad, String nacionalidad) {
 		this.dni = dni;
 		this.nombre = nombre;
 		this.especialidad = especialidad;
+		this.nacionalidad = nacionalidad;
 	}
 
 	public String getDni() {
@@ -34,4 +36,11 @@ public class Cliente {
 		this.especialidad = especialidad;
 	}
 
+    public String getNacionalidad() {
+		return nacionalidad;
+	}
+
+	public void setNacionalidad(String nacionalidad) {
+		this.nacionalidad = nacionalidad;
+	}
 }
